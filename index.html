@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>freeCodeCamp Survey Form</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+        <form id="survey-form" action="">
+            <fieldset>
+                <div>
+                <label for="name" id="name-label"><legend>Name</legend><input id="name" type="text" placeholder="Enter your name" required></label>
+                </div>
+                <div>
+                <label for="email" id="email-label"><legend>Email</legend><input id="email" type="email" placeholder="Enter your Email" required></label>
+                </div>
+                <div>
+                <label for="number" id="number-label"><legend>Age(optional)</legend><input id="number" type="number" placeholder="Age" min="16" max="88"></label>
+                </div>
+                <div>
+                <legend>Which option best describes your role?</legend>
+                <select id="dropdown">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+                </div>
+                <div>
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <input type="radio" name="radio" id="radio" value="Definitely" checked>Definitely
+                <input type="radio" name="radio" id="radio" value="Maybe">Maybe
+                <input type="radio" name="radio" id="radio" value="Not sure">Not sure
+                </div>
+                <div>
+                <legend>What would you like to see improve?(Check all that apply)</legend>
+                <input type="checkbox" name="checkbox" id="checkbox" value="Front-end Projects">Front-end Projects
+                <input type="checkbox" name="checkbox" id="checkbox" value="Back-end Projects">Back-end Projects
+                <input type="checkbox" name="checkbox" id="checkbox" value="Data Visualization">Data Visualization
+                <input type="checkbox" name="checkbox" id="checkbox" value="Challenges">Challenges
+                <input type="checkbox" name="checkbox" id="checkbox" value="Open Sourth Community">Open Sourth Community
+                <input type="checkbox" name="checkbox" id="checkbox" value="Gitter help rooms">Gitter help rooms
+                <input type="checkbox" name="checkbox" id="checkbox" value="Videos">Videos
+                <input type="checkbox" name="checkbox" id="checkbox" value="City Meetups">City Meetups
+                <input type="checkbox" name="checkbox" id="checkbox" value="Wiki">Wiki
+                <input type="checkbox" name="checkbox" id="checkbox" value="Forum">Forum
+                <input type="checkbox" name="checkbox" id="checkbox" value="Addtional Courses">Addtional Courses
+                </div>
+                <div>
+                <legend>Any comments or suggestions?</legend>
+                <textarea name="textarea" id="textarea" cols="70" rols="100" placeholder="Enter your comment here..."></textarea>
+                </div>   
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
