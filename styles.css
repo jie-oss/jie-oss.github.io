@@ -1,0 +1,60 @@
+/* 基本样式 */
+:root {
+  --color1: #000000;
+  --color2: #31f030;
+  --color3: #80806f;
+  --color4: #bfbfbf;
+}
+
+body,
+nav,
+ul,
+li,
+a::after,
+::before {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* nav */
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 0.6px solid #404040;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0.6em 0 0.6em 1.3em;
+}
+
+.navbar ul li {
+  margin-right: 1.5em;
+}
+
+.navbar ul li a {
+  color: var(--color3);
+}
+
+.navbar ul li a:hover {
+  color: var(--color4);
+}
